@@ -5,12 +5,11 @@ local function toggle()
     -- implement the function []
     -- make sure it works with default global variable []
 
-    if vim.g.light_switch == true then
+    if vim.g.colors_name == "snazzy" then
 	vim.g.colors_name = "snazzy"
-	vim.g.light_switch = true	    -- defining default value
-    else
-	vim.g.colors_name = "nord"
-	vim.g.light_switch = false	    -- defining default value
+	vim.cmd [[colorscheme nord]]
+    elseif vim.g.colors_name == "nord" then
+	vim.cmd [[colorscheme snazzy]]
     end
 end
 
