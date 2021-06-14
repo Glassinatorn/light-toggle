@@ -1,4 +1,4 @@
-Toggle_color_1 = "qui"
+Toggle_color_1 = "yui"
 Toggle_color_2 = "nord"
 
 local function toggle()
