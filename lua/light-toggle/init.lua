@@ -3,7 +3,7 @@ Toggle_color_2 = "nord"
 
 local function toggle()
     -- TODO:
-    -- implement the function []
+    -- implement the function [x]
     -- make sure it works with default global variable []
 
     if vim.g.colors_name == Toggle_color_1 then
