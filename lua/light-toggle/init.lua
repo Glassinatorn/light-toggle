@@ -12,10 +12,13 @@ local function toggle()
     -- implement the function [x]
     -- make sure it works with default global variable []
 
+    local color1 = vim.api.nvim_get_var("Toggle_color_1")
+    local color2 = vim.api.nvim_get_var("Toggle_color_2")
 
-    if vim.g.colors_name == Toggle_color_1 then
+
+    if vim.g.colors_name == color1 then
 	vim.api.nvim_command("colorscheme nord")
-    elseif vim.g.colors_name == Toggle_color_2 then
+    elseif vim.g.colors_name == color2 then
 	vim.api.nvim_command("colorscheme yui")
     end
 end
