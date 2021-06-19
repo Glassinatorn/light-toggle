@@ -9,9 +9,9 @@ local function toggle()
 
     -- changing colorscheme
     if vim.g.colors_name == color1 then
-	vim.api.nvim_command("colorscheme yui")
+	vim.api.nvim_command("colorscheme "..color2)
     elseif vim.g.colors_name == color2 then
-	vim.api.nvim_command("colorscheme nord")
+	vim.api.nvim_command("colorscheme "..color1)
     end
 end
 
