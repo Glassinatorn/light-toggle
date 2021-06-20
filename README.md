@@ -14,14 +14,14 @@ In order to switch colorschemes, you must define "Toggle_color_1" and "Toggle_co
 
 ## Lua config
 ```
-vim.api.nvim_set_var(Toggle_color_1, "<colorscheme>")
-vim.api.nvim_set_var(Toggle_color_2, "<colorscheme>")
+vim.api.nvim_set_var(Toggle_color_1, "<colorscheme1>")
+vim.api.nvim_set_var(Toggle_color_2, "<colorscheme2>")
 ```
 
 ## VimL config
 ```
-let g:Toggle_color_1 = "<colorscheme>"
-let g:Toggle_color_2 = "<colorscheme>"
+let g:Toggle_color_1 = "<colorscheme1>"
+let g:Toggle_color_2 = "<colorscheme2>"
 ```
 
 In order to use the toggle, you must call the toggle function with the following:
